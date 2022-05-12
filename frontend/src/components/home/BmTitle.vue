@@ -14,7 +14,7 @@ export default {
 </script>
 
 <style scoped>
-/* h1 {
+h1 {
     font-family: 'Nova Flat';
     font-style: normal;
     font-weight: 400;
@@ -30,5 +30,5 @@ p {
     font-weight: 400;
     font-size: 17px;
     line-height: 19px;
-} */
+}
 </style>
