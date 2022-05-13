@@ -5,7 +5,7 @@
     <input class="input email" v-model="email" placeholder="Enter your email" type="text" />
     <p class="desc pw_desc">Password</p>
     <input class="input pw" v-model="password" placeholder="Enter your password" type="text" />
-    <button class="btn" @click="handleClick">Sign-up</button>
+    <button @click="handleClick">Sign-up</button>
 </template>
 
 <script>
@@ -98,13 +98,13 @@ export default {
     z-index: 2;
 }
 
-.btn {
+button {
     position: absolute;
     width: 196px;
     height: 35px;
     border: none;
-    left: 90px;
-    top: 599px;
+    left: 100px;
+    top: 609px;
     background: #FFBB54;
     border-radius: 13px;
     font-family: 'Poppins';

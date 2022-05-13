@@ -1,6 +1,6 @@
 <template>
     <div class="text">
-        <router-link to="registration"><span class="black">New User?</span><span class="brown">Join Us</span></router-link>
+        <span class="black">New User?</span><router-link to="registration"><span class="brown">Join Us</span></router-link>
         <router-view></router-view>
     </div>
 </template>
@@ -15,7 +15,7 @@ export default {
 .text {
     position: absolute;
     left: 135px;
-    top: 569px;
+    top: 579px;
     font-size: 16px;
     line-height: 19px;
 }
