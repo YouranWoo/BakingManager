@@ -1,7 +1,7 @@
 <template>
     <div id="login">
-        <img alt="login logo" src="@/assets/images/emoji_baguette.png">
-        <h1>REGISTRATION</h1>
+        <img class="baguette" alt="register logo" src="@/assets/images/emoji_baguette.png">
+        <p class="title">REGISTRATION</p>
     </div>
 </template>
 
@@ -12,21 +12,26 @@ export default {
 </script>
 
 <style scoped>
-h1 {
-    font-family: 'Nova Flat';
-    font-style: normal;
+@font-face {
+    font-family: 'Jost';
+    src: url(@/assets/fonts/Jost-VariableFont_wght.ttf) format('truetype');
     font-weight: 400;
-    font-size: 40px;
-    line-height: 48px;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    font-style: normal;
 }
-p {
-    font-family: 'Handjet';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 19px;
+
+.baguette {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 172px;
+    top: 123px;
+}
+.title {
+    position: absolute;
+    left: 75px;
+    top: 160px;
+    font-family: 'Jost';
+    font-size: 36px;
+    line-height: 52px;
 }
 </style>

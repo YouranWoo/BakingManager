@@ -26,7 +26,7 @@ export default {
 
 <style>
 .bm_home {
-  background: #FFBB54;
+  background: #ffbb54;
 }
 .btn1 {
   position: absolute;

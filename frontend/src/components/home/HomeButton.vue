@@ -26,8 +26,6 @@ export default {
     background: linear-gradient(180deg, #FFBB54 0%, #B36B2A 100%);
     border-radius: 13px;
     font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
     font-size: 18px;
     line-height: 22px;
     text-align: center;
