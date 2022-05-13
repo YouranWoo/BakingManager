@@ -1,11 +1,13 @@
 <template>
-  <div>
+  <div id="app" class="bm_home">
     <BmTitle/>
-    <div id = "button">
+    <div class="btn1">
       <router-link to="login"><HomeButton name = "LOGIN"/></router-link>
-      <router-link to="registration"><HomeButton name = "REGISTRATION"/></router-link>
-      <router-view></router-view>
     </div>
+    <div class="btn2">
+      <router-link to="registration"><HomeButton name = "REGISTRATION"/></router-link>
+    </div>
+      <router-view></router-view>
   </div>
 </template>
 
@@ -23,13 +25,17 @@ export default {
 </script>
 
 <style>
-#app {
+.bm_home {
   background: #FFBB54;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+.btn1 {
+  position: absolute;
+  left: 99px;
+  top: 420px;
+}
+.btn2 {
+  position: absolute;
+  left: 99px;
+  top: 471px;
 }
 </style>

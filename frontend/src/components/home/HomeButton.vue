@@ -1,7 +1,5 @@
 <template>
-    <div id="button">
-        <button @click="handleClick">{{ name }}</button>
-    </div>
+    <button class="btn" @click="handleClick">{{ name }}</button>
 </template>
 
 <script>
@@ -14,7 +12,14 @@ export default {
 </script>
 
 <style scoped>
-button {
+@font-face {
+    font-family: 'Poppins';
+    src: url(@/assets/fonts/Poppins-Medium.ttf) format('truetype');
+    font-weight: 500;
+    font-style: Medium;
+}
+
+.btn {
     width: 196px;
     height: 35px;
     border: none;
@@ -23,7 +28,7 @@ button {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 22px;
     text-align: center;
     color: #FBD8A9;
