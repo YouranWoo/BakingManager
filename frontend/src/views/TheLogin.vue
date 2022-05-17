@@ -31,9 +31,7 @@ export default {
 .white_box {
   position: absolute;
   width: 375px;
-  height: 534px;
-  /* left: 0px;
-  top: 278px;  */
+  height: 542px;
   left: 8px;
   top: 286px;
   background: #FFFFFF;

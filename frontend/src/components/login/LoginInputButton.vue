@@ -5,7 +5,7 @@
         <input class="input email" v-model="email" placeholder="Enter your email" type="text" />
         <p class="desc pw_desc">Password</p>
         <input class="input pw" v-model="password" placeholder="Enter your password" type="text" />
-        <button @click="handleClick">Login</button>
+        <button @click="loginClick">Login</button>        
     </div>
 </template>
 
@@ -16,9 +16,40 @@ export default {
         return {
             email: '',
             password: '',
-        }
-    }
-}
+        };
+    },
+    methods : {
+        loginClick(){
+            console.log(this.email);
+            console.log(this.password);
+        },
+
+        // loginClick(){
+        //     let saveData = {};
+        //     saveData.userEmail = this.email;
+        //     saveData.userPassword = this.password;
+        //     const HOST = "";
+
+        //     try {
+        //         this.$axios
+        //         .post(HOST + "/login", JSON.stringify(saveData), {
+        //             headers: {
+        //                 "Content-Type": 'application/json',
+        //             },
+        //         })
+        //         .then((res) => {
+        //             if (res.status == 200){
+                        // this.$router.push({ name : 'main'});
+                        // this.$store.commit("login", res.data);
+
+        //             }
+        //         });
+        //     } catch(error) {
+        //         console.error(error);
+        //     }
+        // },
+    },
+};
 </script>
 
 <style scoped>
